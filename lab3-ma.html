@@ -11,25 +11,46 @@
     <h2>HTML5 Alarm Clock</h2>
     <p>Set your alarm using HTML5 controls!</p>
     <br>
+
+
     <label for="datetime">Select date and time:</label>
     <br>
     <input type="datetime-local" name="datetime" id="datetime">
     <br>
     <br>
+
+
     <label for="volume">Volume:</label>
     <br>
     <input type="range" id ="volume" min="1" max="10">
     <br>
+    <br>
+
     <label for="sound">Choose alarm sound: </label>
     <br>
-    <select id ="sound">
-        <option value ="Beep">Beep</option>
-        <option value ="Birds">Birds</option>
-        <option value ="Honk">Honk</option>        
-        <option value ="Drums">Drums</option>        
-        <option value ="Shouting">Shouting</option>        
-        <option value ="Happy">Happy</option>        
+    <input type="text" list="sound">
+    <datalist id ="sound">
+        <option value="Beep">Beep</option>
+        <option value="Birds">Birds</option>
+        <option value="Happy">Happy</option>
+        <option value="Drums">Drums</option>
+        <option value="Bang">Bang</option>
+        <option value="Honk">Honk</option>
     </datalist>
+    <br>
+    <br>
 
+    <label for="number">Repeat amount:</label>
+    <br>
+    <input type="number" id ="number" min="1" max="10" value="1">
+    <br>
+    <br>
+
+    <label for="user-message">Enter a message:</label>
+    <br>
+    <input type="search" id="user-message">
+    <br>
+    <br>
+    <input type="button" id ="submit" value="Submit">
 </body>
 </html>
